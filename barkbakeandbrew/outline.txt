@@ -1,0 +1,75 @@
+							Project Overview:
+
+							
+Bark bake and brew website to represent the business / capabilities. 
+
+							Layout ideas:
+
+-static top bar with limited information
+
+-white background primarily
+	-color pallete somewhat a brighter pastel; generally soft pink and greens.
+	
+-dynamic menu which will adjust to media querries / device display size
+	-possibly in header but may have separation of space from top of page. need more thought
+	-possibly an ordering contact link, image gallery, event history gallery, etc
+	
+-standard descriptive content on page. Current events / charity participation
+
+-Link to ordering/contract will be interactive requiring a form for contact submission.
+
+-I like the CSS shadow box model, I plan to incorporate a similar effect to the images on pages.
+	-image galleries may use an established lightbox or other method of display which may require configuration to achieve a similar visual effect. More research necessary
+	
+-footer at the bottom with normal info, perhaps having menu selectors drop into it when media querry specifies mobile devices
+
+-Domain is already purchased and may host site on my work server or rent hosting space long term once it becomes viable. 
+
+
+
+
+
+
+
+
+
+							Secondary Project (if I have time):
+							
+Stumlers machine site to represent their business and handle project inquiries
+
+							Layout ideas:
+							
+
+-White background
+							
+-top menu bar with Stumler logo banner which will link to a contacts page and machine gallery / picture galley
+
+-static informational content on main page 
+
+-contact page with form submission for project quotes and other inquerries
+
+-shop footage for image and backgrounds
+
+-more to come if this see's the light
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
