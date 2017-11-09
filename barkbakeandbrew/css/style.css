@@ -1,5 +1,3 @@
-
-
 /* ================================= 
   Base Element Styles
 ==================================== */
@@ -8,13 +6,14 @@ body {
 }
 
 
+
 /* ================================= 
   Base Layout Styles
 ==================================== */
 
 /* ---- Navigation ---- */
 
-
+/*--- styles for the header ---*/
 .header {
   display: flex;
   flex-flow: column;
@@ -23,33 +22,77 @@ body {
 }
 
 .header li {
-  padding: 5px;
+  padding: 5px 0px;
 }
 
+/*--- styles for the nav bar appearance ---*/
 .linkList a {
   text-decoration: none;
   color: white;
-  font-size: 20px;
-  
+  font-size: 20px; 
 }
+
 .linkList a:hover { 
-  background-color: #F5FF00;
+  background-color: #28F4BB;
+  border-radius: 5px;
 }
 
+/*--- styles for the charity page links ---*/
+.bodyLinkList a {
+  text-decoration: none;
+  color: black;
+  align: left;
+}
 
-/* ---- Layout Containers ---- */
+.bodyLinkList a:hover { 
+  background-color: #FF65E1;
+  border-radius: 5px;
+}
+
+/*--- styles for the site forms appearance ---*/
+.form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 10px;
+  box-shadow: 0 12px 15px -12px #000;
+}
+
+/*--- This is styling the form submission button ---*/
+.button {
+  background-color: #28F4BB;
+  text-align: center;
+  font-style: normal;
+  border-radius: 10px;
+}
+
+/*--- styles for the site forms input fields ---*/
+.inputarea {
+  width: 250px;
+  height: 50px;
+}
+
+.fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+/* ================================= 
+  Site Containers
+==================================== */
 
 /*--- This is the site wrap container which sets some flexbox behavior and top/bottom margins for fixed elements---*/
 .sitewrap {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
-  margin-top: 150px;
+  margin-top: 200px;
   margin-bottom: 25px;
 
 }
 
-/* This sets the header to the top of the screen in a fixed position and places the box shadow effect*/
+/*--- This sets the header to the top of the screen in a fixed position and places the box shadow effect---*/
 .headerwrap {
   position: fixed;
   top: 0px;
@@ -58,34 +101,9 @@ body {
   width: 100%;
   background-color: #FF65E1;
   box-shadow: 0 12px 15px -12px #000 ;
-
 }
 
-.content1 {
-  width: 40%;
-  
-}
-.content2 {
-  Width: 40%;
-  
-}
-.form {
-  Width: 40%;
-  
-}
-
-.form ol {
-  text-align: left;
-  background-color: #FF65E1;
-  width: 150px;
-  height: 200px;
-  border-radius: 10px;
-}
-.lightbox {
-  Width: 40%;
-  
-}
-/* This sets the footer to the bottom of the screen in a fixed position and places the box shadow effect*/
+/*--- This sets the footer to the bottom of the screen in a fixed position and places the box shadow effect---*/
 .mainfooter {
   display: flex;
   justify-content: center;
@@ -94,37 +112,42 @@ body {
   text-align: center;
   width: 100%;
   background-color: #FF65E1;
-  box-shadow: 0 -12px 15px -12px #000 ;
+  box-shadow: 1px -5px 15px -6px #000 ;
 }
 
+/*--- styles for the column divs / images ---*/
 .col {
  
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  flex: 50%;
+  flex: 0 1 auto;
   margin: 10px;
   
 }
 .col img {
-  width: 33%;
-  height: 33%;
+ 
   border-radius: 10px;
   box-shadow: 0 15px 20px -12px #000 ;
 }
 
+.paw {
+  height: 20px;
+  width: 20px;
+}
 
 /* ================================= 
   Media Queries
 ==================================== */
 
 @media (min-width: 548px) {
+ /*--- This is the site wrap container which sets some flexbox behavior and top/bottom margins for fixed elements at medium res---*/
 
   .sitewrap {
     display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
     margin-top: 125px;
     margin-bottom: 25px;
   }
@@ -141,21 +164,70 @@ body {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-end;
-        margin: 0.67em 0;
+        margin: 5px 0;
         
       }
         .header li {
-          padding: 25px;
+          padding: 0px 25px;
         }
-
+        
+        .col {
+          
+           display: flex;
+           flex-direction: row;
+           flex-wrap: wrap;
+           justify-content: space-evenly;
+           flex: 0 40%;
+           margin: 10px;
+         }
 
 }
 
 
+@media (min-width: 732px) {
+ /*--- This is the site wrap container which sets some flexbox behavior and top/bottom margins for fixed elements at higher res---*/
 
-@media (max-width: 1024px) {
- 
-  
+ .sitewrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin-top: 150px;
+  margin-bottom: 25px;
+}
+
+.col {
+   align-self: flex-start;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   flex: 0 40%;
+   margin: 10px;   
+   
+ }
+
+
+ .header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+  .header ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 0.67em 0; 
+  }
+
+    .header li {
+      padding: 25px;
+    }
+   
 }
 
 

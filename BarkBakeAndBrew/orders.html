@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bark Bake and Brew</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- this section contains the header element and navigation links -->
+<div class="headerwrap">
+		<header class="header"><h1>Bark Bake and Brew</h1>
+			<ul class="linkList">
+				<li><a href="charity.html" alt="Local Charities">Local Charities</a></li>
+				<li><a href="index.html" alt="Homepage">BBB Homepage</a></li>
+				<li><a href="about.html" alt="About BBB / Gallery">About Us</a></li>
+			</ul>
+		</header>
+	</div>
+
+	<div class="sitewrap">
+
+
+<!--this section contains the HTML for the submission form and return method (mailto) -->
+	<div class="form col">
+		
+		<form action="mailto:barkbakeandbrew@twc.com?subject=Bark Bake and Brew Website Order!" method="post" enctype="text/plain">
+				
+				<h1><img src="img/pawicon.jpg" alt="paw" class="paw"> Contact Us! <img src="img/pawicon.jpg" alt="paw" class="paw"></h1>
+				<p>Please let us know what you are interested in by completing the email submission form below. Include specific details and we will work together with you directly to be sure you get the best tasting and best looking treats you have ever had!</p>
+				<fieldset>					
+					<legend>Your info</legend>				
+					<label for="name">Name :</label>
+					<input type="text" id="name" name="name">				
+					<label for="phone" placeholder="optional">Phone:</label>
+					<input type="phone" id="phone" name="phone" placeholder="optional">	
+				</fieldset>
+				
+				<fieldset>
+					<legend> Request</legend>
+					<label for="quote">Quote Information:</label>
+					<textarea id="quote" name="quote" class="inputarea" placeholder="Please include a detailed quote request here..."></textarea>
+					<input type="submit" value="Send" class="button">
+					<input type="reset" value="Reset" class="button">
+				</fieldset>		
+			</form>
+		</div>
+
+</div>
+
+<!-- this section is the footer element -->
+<div class="mainfooter">
+	<footer>
+		<span>Designed at Aliens-Workshop, 2017</span>
+	</footer>
+</div>
+
+</body>
+
+</html>
