@@ -5,6 +5,7 @@
 	<title>Bark Bake and Brew</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -25,7 +26,7 @@
 <!-- this section contains the paragraph contents and should flex-wrap based on screen size -->
 	 
 	<div class="content2 col">
-		<img src="img/bbb logo.jpg" class="img">
+		<img src="img/bbb logo.jpg" class="divImg">
 	</div> 
 	<div class="content1 col">
 		<h3><img src="img/pawicon.jpg" alt="paw" class="paw"> Bark Bake And Brew <img src="img/pawicon.jpg" alt="paw" class="paw"></h3>
@@ -34,12 +35,23 @@
 		<p>If you are interested in what we can do for your private event or if you would just like to order a bag of tasty treats, please visit our gallery below. If you decide you would like to place an order, please visit the order quote page from the links above</p>
 		
 	</div>
-<!-- this section contains the lightbox gallery element-->
-		<div class="lightbox col">
-				<h3>Image Gallery</h3>
-				<br>
-				<p>This will eventually contain the image lightbox gallery</p>
-				<img src="img/bbb logo.jpg" class="img" alt="lightbox placeholder">
+<!-- this section contains the lightbox gallery-->
+		<div class="imageGallery">
+			<h1>Image Gallery</h1>
+			<p>
+			<ul id="imageGallery" class="imageGallery">
+				<li><a href="img/bbb_TT.jpg"><img src="img/bbb_TT.jpg" width="100" alt="Trick or Treat!"></a></li>
+				<li><a href="img/bbb_punkins.jpg"><img src="img/bbb_punkins.jpg" width="100" alt="Punkins"></a></li>
+				<li><a href="img/bbb_poisonapple.jpg"><img src="img/bbb_poisonapple.jpg" width="100" alt="Poison apple anyone?"></a></li>
+				<li><a href="img/bbb_Frankie.jpg"><img src="img/bbb_Frankie.jpg" width="100" alt="Frankie!"></a></li>
+				<li><a href="img/bbb_crosses.jpg"><img src="img/bbb_crosses.jpg" width="100" alt="Fair Journey, Duane and Yvonne."></a></li>
+				<li><a href="img/BBB_jars.jpg"><img src="img/BBB_jars.jpg" width="100" alt="Spooky Jars!"></a></li>
+			<!-- add any future images here -->
+			</ul>
+			<!-- code necessary for jquery CDN and local file -->
+			<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+			<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+			</p>
 			</div>
 
 </div>

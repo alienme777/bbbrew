@@ -5,8 +5,48 @@ body {
   background-color: #28F4BB
 }
 
+/*================================== 
+---Image gallery lightbox styles---
+===================================== */
+#overlay {
+  background:rgba(0,0,0,0.6);
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  display:none;
+  text-align:center;
+}
+/* ---space from bottom of page--- */
+#overlay img {
+ margin-bottom: 5%; 
+}
+/* ---sets text color of caption for picture in overlay--- */
+#overlay p {
+ color:white; 
+}
+/* ---alignment of UL and items--- */
+.imageGallery {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 0 1 auto;
+  margin: 10px;
+  padding: 2px;
+}
 
-
+.imageGallery ul li {
+	display: inline-block;
+	padding: 5px;
+	background:white;
+	margin:5px;
+}
+.imageGallery ul li img {
+  display: block;
+}
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -34,7 +74,8 @@ body {
 
 .linkList a:hover { 
   background-color: #28F4BB;
-  border-radius: 5px;
+  border-radius: 10px;
+  padding: 10px 10px;
 }
 
 /*--- styles for the charity page links ---*/
@@ -46,7 +87,7 @@ body {
 
 .bodyLinkList a:hover { 
   background-color: #FF65E1;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 /*--- styles for the site forms appearance ---*/
@@ -64,7 +105,7 @@ body {
   background-color: #28F4BB;
   text-align: center;
   font-style: normal;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 /*--- styles for the site forms input fields ---*/
@@ -126,15 +167,16 @@ body {
   margin: 10px;
   
 }
-.col img {
- 
-  border-radius: 10px;
+.divImg {
+  width: 100%;
+  border-radius: 20px;
   box-shadow: 0 15px 20px -12px #000 ;
 }
 
 .paw {
   height: 20px;
   width: 20px;
+  border-radius: 50%;
 }
 
 /* ================================= 
@@ -181,6 +223,10 @@ body {
            margin: 10px;
          }
 
+         /* ---Image Gallery space from top of page--- */
+        #overlay img {
+          margin-top: 5%; 
+        }
 }
 
 
@@ -228,6 +274,12 @@ body {
       padding: 25px;
     }
    
+      /* ---Image Gallery space from top of page--- */
+      #overlay img {
+        margin-top: 5%; 
+      }
+
+
 }
 
 
