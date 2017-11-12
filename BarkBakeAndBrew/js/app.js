@@ -1,13 +1,13 @@
 
-
+//variables 
 var $overlay = $('<div id="overlay"></div>');
-var $image = $("<img>");
-var $caption = $("<p></p>");
+var $img = $("<img>");
+var $cap = $("<p></p>");
 
 //Add image and caption to overlay
-$overlay.append($image);
+$overlay.append($img);
 
-$overlay.append($caption);
+$overlay.append($cap);
 
 //Add overlay
 $("body").append($overlay);
@@ -15,16 +15,16 @@ $("body").append($overlay);
 //Capture the click event
 $("#imageGallery a").click(function(event){
   event.preventDefault();
-  var imageLocation = $(this).attr("href");
+  var imgLocation = $(this).attr("href");
   
   //Update overlay with the image linked in the link and show
-  $image.attr("src", imageLocation);
+  $img.attr("src", imgLocation);
   
   $overlay.show();
   
   //Get child's alt attribute and set caption
-  var captionText = $(this).children("img").attr("alt");
-  $caption.text(captionText);
+  var capText = $(this).children("img").attr("alt");
+  $cap.text(capText);
 });
 
 //When overlay is clicked
