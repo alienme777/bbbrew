@@ -11,17 +11,19 @@ body {
 ===================================== */
 #overlay {
   background:rgba(0,0,0,0.6);
-  width:100%;
-  height:100%;
-  position:absolute;
+  position:fixed;
   bottom:0;
   left:0;
+  right:0;
+  top:0;
   display:none;
   text-align:center;
 }
 /* ---space from top of overlay--- */
 #overlay img {
  margin-top: 5%; 
+ max-height: 50%;
+ max-width: 50%;
 }
 /* ---sets text color of caption for picture in overlay--- */
 #overlay p {
@@ -177,7 +179,6 @@ body {
   justify-content: center;
   flex: 0 1 auto;
   margin: 10px;
-  
 }
 
 .divImg {
@@ -197,8 +198,8 @@ body {
 ==================================== */
 
 @media (min-width: 532px) {
+  
  /*--- This is the site wrap container which sets some flexbox behavior and top/bottom margins for fixed elements at medium res---*/
-
   .sitewrap {
     display: flex;
     flex-flow: row wrap;
@@ -236,7 +237,7 @@ body {
           }
 
           /* ---Image Gallery space from top of page--- */
-          #overlay {
+          /* #overlay {
           background:rgba(0,0,0,0.6);
           width:100%;
           height:100%;
@@ -245,12 +246,12 @@ body {
           left:0;
           display:none;
           text-align:center;
-          }
+          } */
 }
 
 @media (min-width: 762px) {
- /*--- This is the site wrap container which sets some flexbox behavior and top/bottom margins for fixed elements at higher res---*/
 
+ /*--- This is the site wrap container which sets some flexbox behavior and top/bottom margins for fixed elements at higher res---*/
  .sitewrap {
     margin-top: 150px;
    }
